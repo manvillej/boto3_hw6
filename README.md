@@ -1,5 +1,8 @@
 # boto3
 
+## Requirements:
+you must have the aws cli install and have your access_key and secret_key set. 
+
 ## Publisher
 ### install
 .$> pip install requirements.txt
