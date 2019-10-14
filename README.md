@@ -6,7 +6,7 @@
 
 ### run
 .$> set SNS_ARN=<SNS_ARN>
-.$> python publisher
+.$> python publisher.py
 
 ## Consumer
 ### install
@@ -14,5 +14,5 @@
 
 ### run
 .$> set SQS_QUEUE_URL=<SQS_QUEUE_URL>
-.$> python consumer
+.$> python consumer.py
 
