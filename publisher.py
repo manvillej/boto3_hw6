@@ -13,8 +13,10 @@ import boto3
 
 def main():
 	topic = os.environ['SNS_ARN']
+	iterations = os.environ.get('PUBLISHER_ITERATIONS', 1000)
+	sleep_time = os.environ.get('PUBLISHER_SLEEP_TIME', 1)
 	sns = boto3.client('sns')
-	for i in randIntGenerator(4, .5):
+	for i in randIntGenerator(iterations, sleep_time):
 		sns.publish(
 		    TopicArn=topic,    
 		    Message=i,)
